@@ -362,6 +362,40 @@ External public hosts are restricted from directly accessing protected internal 
 - Internet-originated ICMP blocked toward protected segments
 - Internal services remain isolated from public networks
 
+
+---
+
+# DMZ Access Control Validation
+
+The infrastructure implements controlled access policies between internal users, external networks and the DMZ environment.
+
+Internal corporate users are allowed to access authorized services hosted in the DMZ segment, while external public networks are restricted by firewall security policies.
+
+## Internal Access to DMZ Services
+
+Authorized internal users can successfully access web services hosted in the DMZ environment through controlled internal routing and firewall policies.
+
+The following screenshot demonstrates successful internal access to the DMZ web server.
+
+![Internal Access to DMZ](Enterprise-Network-Lab/docs/screenshots/internal-dmz-access.png)
+
+---
+
+## External Access Restriction
+
+External public hosts connected through the Internet segment are restricted from directly accessing protected DMZ services.
+
+Firewall filtering policies prevent unauthorized Internet-originated communication toward internal protected resources.
+
+The following screenshot demonstrates blocked external access attempts to the DMZ web server.
+
+![External Access Blocked](Enterprise-Network-Lab/docs/screenshots/external-dmz-blocked.png)
+
+
+
+
+
+
 ---
 
 # External Connectivity Validation
