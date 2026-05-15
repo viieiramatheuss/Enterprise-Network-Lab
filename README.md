@@ -347,7 +347,7 @@ Internal hosts are capable of reaching external networks through the enterprise 
 
 The following test demonstrates successful communication between an internal workstation and an external public server.
 
-![Google Ping Test](docs/screenshots/google-ping-test.png)
+![Google Ping Test](Enterprise-Network-Lab/docs/google-ping-test.png)
 
 
 # Usage
