@@ -213,6 +213,18 @@ Implemented across all VLAN gateways:
 - Automatic failover
 - Improved availability
 
+  ---
+
+## Failover Validation
+
+The infrastructure was tested against simulated core failures to validate high availability and redundancy mechanisms.
+
+During failover testing, one of the core devices was intentionally disabled to simulate a network outage scenario. Network services and external connectivity remained operational through the redundant infrastructure path.
+
+The following screenshot demonstrates successful Internet connectivity during a simulated core failure event.
+
+![Redundancy Failover Test](Enterprise-Network-Lab/docs/core-failover-test.png)
+
 ---
 
 ## EtherChannel
@@ -235,6 +247,7 @@ LACP EtherChannel configured between core devices for:
 - BPDU Guard
 - PortFast
 - Disabled unused interfaces
+- Black Hole Vlan
 
 ---
 
