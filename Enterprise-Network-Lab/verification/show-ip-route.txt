@@ -1,0 +1,31 @@
+ROUTING TABLE SUMMARY
+=====================
+
+Connected Networks:
+- 192.168.10.0/24
+- 192.168.20.0/24
+- 192.168.30.0/24
+- 192.168.40.0/24
+- 192.168.60.0/24
+- 192.168.80.0/24
+- 192.168.90.0/24
+- 10.20.0.0/16
+- 10.11.11.32/27
+
+WAN Networks:
+- 10.2.2.0/30
+- 10.2.2.4/30
+- 10.2.2.8/30
+- 10.2.2.12/30
+- 105.100.50.0/30
+- 105.100.50.4/30
+- 197.200.100.0/30
+- 197.200.100.4/30
+
+Routing Protocol:
+- OSPF Area 0
+
+Features:
+- Dynamic route learning
+- Redundant WAN routing
+- Internal enterprise routing

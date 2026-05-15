@@ -1,0 +1,153 @@
+User Access Verification
+
+Password: 
+
+sw-servidores>en
+Password: 
+sw-servidores#sh
+sw-servidores#show r
+sw-servidores#show running-config 
+Building configuration...
+
+Current configuration : 2383 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname sw-servidores
+!
+enable password 7 083343411D
+!
+!
+!
+ip ssh version 2
+no ip domain-lookup
+ip domain-name root.com
+!
+username root secret 5 $1$mERr$GbpJzpzIDj5Z9M0guq9qN1
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport mode trunk
+!
+interface FastEthernet0/2
+ switchport mode trunk
+!
+interface FastEthernet0/3
+ switchport access vlan 100
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/4
+ switchport access vlan 100
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/5
+ switchport access vlan 100
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/6
+ switchport access vlan 100
+ switchport mode access
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/7
+ switchport access vlan 100
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/8
+ switchport access vlan 50
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/9
+ switchport mode trunk
+!
+interface FastEthernet0/10
+ switchport access vlan 100
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ ip address 192.168.10.12 255.255.255.0
+!
+ip default-gateway 192.168.10.1
+!
+banner motd ^C^C
+!
+!
+!
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 deny any
+ip access-list extended SSH-ONLY
+ permit tcp 192.168.10.0 0.0.0.255 any eq 22
+ deny tcp any any eq 22
+ permit ip any any
+line con 0
+ password 7 083343411D
+ logging synchronous
+ login
+ exec-timeout 3 0
+!
+line vty 0 4
+ access-class SSH-ONLY in
+ login local
+ transport input ssh
+line vty 5 15
+ access-class SSH-ONLY in
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
+
+
+sw-servidores# 

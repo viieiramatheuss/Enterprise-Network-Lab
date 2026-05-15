@@ -1,0 +1,19 @@
+OSPF NEIGHBOR INFORMATION
+=========================
+
+OSPF Process ID : 35
+Area            : 0
+
+Neighbors:
+- fw1
+- fw2
+- ISP Router 1
+- ISP Router 2
+- sw-core1
+- sw-core2
+
+Features:
+- Dynamic routing
+- Route propagation
+- Redundant path selection
+- Enterprise backbone routing

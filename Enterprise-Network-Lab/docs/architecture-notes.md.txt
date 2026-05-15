@@ -1,0 +1,87 @@
+# Enterprise Network Architecture Notes
+
+## Architecture Model
+
+The infrastructure follows a hierarchical enterprise network model:
+
+- Core Layer
+- Distribution Layer
+- Access Layer
+
+---
+
+# Core Layer
+
+The core layer consists of:
+
+- sw-core1
+- sw-core2
+
+Responsibilities:
+
+- Inter-VLAN routing
+- OSPF routing
+- HSRP gateway redundancy
+- EtherChannel aggregation
+- High-speed switching
+
+---
+
+# Access Layer
+
+Access switches are segmented by department.
+
+Each department has:
+
+- Dedicated VLAN
+- Port security
+- DHCP Snooping
+- Dynamic ARP Inspection
+- SSH management
+
+---
+
+# Firewall Layer
+
+The firewall layer provides:
+
+- WAN connectivity
+- Traffic filtering
+- ACL enforcement
+- Border protection
+
+---
+
+# Wireless Infrastructure
+
+The wireless environment contains:
+
+- Wireless LAN Controller
+- Wireless clients
+- Segmented wireless VLANs
+- Centralized administration
+
+---
+
+# Security Design
+
+Security mechanisms implemented:
+
+- Layer 2 hardening
+- Administrative isolation
+- SSH-only management
+- ACL restriction
+- Port protection
+- Unused port shutdown
+- VLAN segmentation
+
+---
+
+# Redundancy
+
+High availability implemented using:
+
+- HSRP
+- EtherChannel
+- Redundant firewalls
+- OSPF dynamic routing

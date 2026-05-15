@@ -1,0 +1,31 @@
+SECURITY FEATURES
+=================
+
+Switch Security:
+- Port Security
+- Sticky MAC
+- BPDU Guard
+- PortFast
+- Disabled Unused Ports
+
+Layer 2 Security:
+- DHCP Snooping
+- Dynamic ARP Inspection
+- Trusted Trunk Interfaces
+
+Administrative Security:
+- SSH Version 2
+- ACL-based SSH restriction
+- Local authentication
+- Dedicated management VLAN
+
+Firewall Security:
+- ICMP filtering
+- SSH-only management
+- Access Control Lists
+- WAN segmentation
+
+Wireless Security:
+- Wireless LAN Controller
+- Dedicated wireless VLAN
+- Segmented wireless clients

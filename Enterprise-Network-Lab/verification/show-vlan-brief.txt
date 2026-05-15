@@ -1,0 +1,33 @@
+SWITCH VLAN INFORMATION
+=======================
+
+VLAN 10  - Management
+Subnet   : 192.168.10.0/24
+
+VLAN 20  - Administration
+Subnet   : 192.168.20.0/24
+
+VLAN 30  - Design
+Subnet   : 192.168.30.0/24
+
+VLAN 40  - IT
+Subnet   : 192.168.40.0/24
+
+VLAN 50  - Wireless
+Subnet   : 10.20.0.0/16
+
+VLAN 60  - Finance
+Subnet   : 192.168.60.0/24
+
+VLAN 70  - Voice
+
+VLAN 80  - POS / Cashier
+Subnet   : 192.168.80.0/24
+
+VLAN 90  - Marketing
+Subnet   : 192.168.90.0/24
+
+VLAN 100 - Servers
+Subnet   : 10.11.11.32/27
+
+VLAN 199 - Black Hole Vlan

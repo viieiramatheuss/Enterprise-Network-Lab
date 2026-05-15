@@ -1,0 +1,119 @@
+fw1>
+fw1>en
+fw1#sh
+fw1#show run
+fw1#show running-config 
+Building configuration...
+
+Current configuration : 1586 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname fw1
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username root privilege 15 secret 5 $1$mERr$GbpJzpzIDj5Z9M0guq9qN1
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain-name root.com
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.11.11.1 255.255.255.224
+ ip access-group ACL_BLOCK_PING_10_11 in
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ ip address 105.100.50.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet7/0
+ ip address 197.200.100.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet8/0
+ ip address 10.2.2.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet9/0
+ ip address 10.2.2.10 255.255.255.252
+ duplex auto
+ speed auto
+!
+router ospf 1
+ router-id 1.1.90.90
+ log-adjacency-changes
+ network 10.2.2.0 0.0.0.3 area 0
+ network 105.100.50.0 0.0.0.3 area 0
+ network 197.200.100.0 0.0.0.3 area 0
+ network 10.2.2.8 0.0.0.3 area 0
+ network 10.11.11.0 0.0.0.31 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+ip access-list extended ACL_BLOCK_PING_10_11
+ deny icmp 10.11.11.0 0.0.0.31 any echo
+ deny icmp 10.11.11.0 0.0.0.31 any echo-reply
+ permit ip 10.11.11.0 0.0.0.31 any
+ip access-list extended SSH-ONLY
+ permit tcp 192.168.10.0 0.0.0.255 any eq 22
+ deny tcp any any eq 22
+ permit ip any any
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ access-class SSH-ONLY in
+ login local
+ transport input ssh
+line vty 5 15
+ access-class SSH-ONLY in
+ login local
+ transport input ssh
+!
+!
+!
+end
+
+
+fw1# 

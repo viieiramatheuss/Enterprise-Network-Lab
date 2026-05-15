@@ -1,0 +1,20 @@
+ETHERCHANNEL SUMMARY
+====================
+
+Group: Port-channel1
+Protocol: LACP
+
+Members:
+- GigabitEthernet1/0/22
+- GigabitEthernet1/0/23
+- GigabitEthernet1/0/24
+
+Mode:
+- sw-core1 : active
+- sw-core2 : passive
+
+Purpose:
+- Core redundancy
+- Link aggregation
+- Increased throughput
+- High availability
