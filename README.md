@@ -105,7 +105,7 @@ The WLC interface allows administrators to:
 
 The following screenshot demonstrates the secure administrative access from the management workstation (`sec-pc`) to the Wireless LAN Controller interface.
 
-![WLC Management](docs/screenshots/wlc-management.png)
+![WLC Management](Enterprise-Network-Lab/docs/wlc-management.png)
 
 ---
 
