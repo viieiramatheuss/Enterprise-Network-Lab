@@ -296,9 +296,8 @@ Enterprise-Network-Lab/
 │   └── enterprise-network-lab.pkt
 │
 ├── docs/
-│   ├── topology.png
-│   ├── screenshots/
-│   └── architecture-notes.md
+│   ├── .pngs
+│   └── architecture-notes.md.txt
 │
 ├── configs/
 │   ├── core/
