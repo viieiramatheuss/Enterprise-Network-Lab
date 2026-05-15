@@ -306,6 +306,49 @@ Add screenshots showing:
 - SSH access restriction
 
 ---
+---
+
+# DMZ Protection Policy
+
+The DMZ environment is isolated from unauthorized external access through firewall filtering and segmentation policies.
+
+External public hosts are restricted from directly accessing protected internal services located in the DMZ segment.
+
+## Security Controls
+
+- Border firewall filtering
+- DMZ segmentation
+- Controlled inbound access
+- Internal resource isolation
+- Restricted Internet-originated communication
+
+## Security Validation
+
+- External hosts cannot directly access DMZ resources
+- Internet-originated ICMP blocked toward protected segments
+- Internal services remain isolated from public networks
+
+---
+
+# External Connectivity Validation
+
+The infrastructure successfully provides controlled external connectivity to public services on the Internet.
+
+Internal hosts are capable of reaching external networks through the enterprise edge infrastructure and WAN routing configuration.
+
+## Connectivity Validation
+
+- Successful ICMP communication to external public servers
+- Internet reachability through redundant ISP architecture
+- Internal-to-external traffic routing operational
+- WAN routing functioning correctly
+
+### Google Connectivity Test
+
+The following test demonstrates successful communication between an internal workstation and an external public server.
+
+![Google Ping Test](docs/screenshots/google-ping-test.png)
+
 
 # Usage
 
@@ -332,4 +375,4 @@ This project was developed to improve skills in:
 
 # Author
 
-Developed for networking and cybersecurity learning purposes.
+- Developed by viieiramatheuss.
