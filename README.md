@@ -62,6 +62,7 @@ The infrastructure was designed using a hierarchical architecture model with:
 - Dedicated management subnet
 - Disabled unused interfaces
 - VLAN isolation
+- Vlan Black Hole
 
 ---
 
