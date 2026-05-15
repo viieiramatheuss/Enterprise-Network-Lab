@@ -6,7 +6,7 @@ Enterprise-grade network infrastructure developed in Cisco Packet Tracer focused
 
 # Topology
 
-![Topology](docs/topology.png)
+![Topology](Enterprise-Network-Lab/docs/topology.png)
 
 ---
 
