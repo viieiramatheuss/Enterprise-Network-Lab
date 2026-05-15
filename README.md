@@ -253,6 +253,43 @@ LACP EtherChannel configured between core devices for:
 - Local authentication
 - Management VLAN isolation
 
+
+# Secure Administrative Access Control
+
+Administrative access to infrastructure devices is restricted exclusively to hosts located within the dedicated Management VLAN.
+
+Access Control Lists (ACLs) were implemented to prevent unauthorized hosts from accessing network devices through SSH (TCP/22).
+
+## Security Policy
+
+- SSH-only remote administration
+- Port 22 restricted to Management VLAN
+- Unauthorized hosts blocked
+- Dedicated management subnet
+- Centralized infrastructure administration
+
+---
+
+## Authorized Administrative Access
+
+Hosts located inside the Management VLAN are authorized to establish SSH sessions with enterprise infrastructure devices for secure administration and configuration.
+
+The following screenshot demonstrates successful SSH administrative access from an authorized host within the Management VLAN.
+
+![Authorized SSH Access](Enterprise-Network-Lab/docs/authorized-ssh-access.png)
+
+---
+
+## Unauthorized Administrative Access Blocked
+
+Hosts outside the Management VLAN are restricted from accessing infrastructure devices through TCP port 22.
+
+Firewall and ACL policies prevent unauthorized SSH administrative connections originating from non-management networks.
+
+The following screenshot demonstrates blocked SSH access attempts from unauthorized hosts outside the Management VLAN.
+
+![Unauthorized SSH Blocked](Enterprise-Network-Lab/docs/blocked-ssh-access.png)
+
 ---
 
 # Enterprise Services
