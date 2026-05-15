@@ -73,6 +73,40 @@ The infrastructure was designed using a hierarchical architecture model with:
 - Wireless client VLAN
 - Centralized wireless administration
 
+
+---
+
+# Wireless LAN Controller Management
+
+The wireless infrastructure is centrally managed through a Wireless LAN Controller (WLC), allowing centralized configuration and monitoring of enterprise wireless services.
+
+The management workstation (`sec-pc`) is used to securely access the WLC web interface and administer wireless configurations across the infrastructure.
+
+## Wireless Features
+
+- Centralized WLAN management
+- Enterprise SSID deployment
+- VLAN-based wireless segmentation
+- Wireless client isolation
+- Access Point management
+- Centralized wireless administration
+
+## WLAN Administration
+
+The WLC interface allows administrators to:
+
+- Create and manage WLANs
+- Associate VLANs to wireless networks
+- Monitor connected wireless clients
+- Configure Access Points
+- Apply wireless security policies
+
+## WLC Management Access
+
+The following screenshot demonstrates the secure administrative access from the management workstation (`sec-pc`) to the Wireless LAN Controller interface.
+
+![WLC Management](docs/screenshots/wlc-management.png)
+
 ---
 
 ## Routing & Switching
