@@ -377,7 +377,7 @@ Authorized internal users can successfully access web services hosted in the DMZ
 
 The following screenshot demonstrates successful internal access to the DMZ web server.
 
-![Internal Access to DMZ](Enterprise-Network-Lab/docs/screenshots/internal-dmz-access.png)
+![Internal Access to DMZ](Enterprise-Network-Lab/docs/internal-dmz-access.png)
 
 ---
 
@@ -389,7 +389,7 @@ Firewall filtering policies prevent unauthorized Internet-originated communicati
 
 The following screenshot demonstrates blocked external access attempts to the DMZ web server.
 
-![External Access Blocked](Enterprise-Network-Lab/docs/screenshots/external-dmz-blocked.png)
+![External Access Blocked](Enterprise-Network-Lab/docs/external-dmz-blocked.png)
 
 
 
