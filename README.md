@@ -320,19 +320,75 @@ The infrastructure includes:
 
 # Technologies Used
 
+## Networking & Infrastructure
+
 - Cisco Packet Tracer
-- Cisco Layer 2/3 Switching
-- Cisco Routing
-- OSPF
-- HSRP
-- EtherChannel
-- VLANs
-- STP
-- SSH
-- ACLs
+- Cisco Layer 2 Switching
+- Cisco Layer 3 Switching
+- Enterprise Network Architecture
+- Hierarchical Network Design
+- WAN Connectivity
+- DMZ Architecture
+- Redundant Core Infrastructure
+
+---
+
+## Routing & High Availability
+
+- OSPF Dynamic Routing
+- Inter-VLAN Routing
+- HSRP Gateway Redundancy
+- Static Routing
+- Redundant WAN Routing
+- Failover Testing
+
+---
+
+## Switching Technologies
+
+- VLAN Segmentation
+- Trunking (802.1Q)
+- EtherChannel (LACP)
+- Rapid PVST+
+- PortFast
+- BPDU Guard
+- Port Security
+- Sticky MAC Addressing
+
+---
+
+## Network Security
+
+- Access Control Lists (ACLs)
+- SSH Version 2
+- Administrative Access Restriction
+- Dedicated Management VLAN
 - DHCP Snooping
-- Dynamic ARP Inspection
-- Wireless LAN Controller
+- Dynamic ARP Inspection (DAI)
+- Unused Port Shutdown
+- Layer 2 Hardening
+- DMZ Isolation
+- Firewall Filtering Policies
+
+---
+
+## Wireless Infrastructure
+
+- Wireless LAN Controller (WLC)
+- Enterprise WLAN Management
+- Wireless VLAN Segmentation
+- Centralized Wireless Administration
+- Access Point Management
+
+---
+
+## Services & Administration
+
+- Secure Device Management
+- SSH Remote Administration
+- Centralized Infrastructure Management
+- Network Monitoring Concepts
+- Enterprise Device Hardening
 
 ---
 
